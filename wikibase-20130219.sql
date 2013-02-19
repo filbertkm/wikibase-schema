@@ -1579,7 +1579,7 @@ DROP TABLE IF EXISTS `wb_items_per_site`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `wb_items_per_site` (
-  `ips_row_id` int(11) NOT NULL AUTO_INCREMENT,
+  `ips_row_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `ips_item_id` int(10) unsigned NOT NULL,
   `ips_site_id` varbinary(32) NOT NULL,
   `ips_site_page` varbinary(255) NOT NULL,
@@ -1607,7 +1607,7 @@ DROP TABLE IF EXISTS `wb_terms`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `wb_terms` (
-  `term_row_id` int(11) NOT NULL AUTO_INCREMENT,
+  `term_row_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `term_entity_id` int(10) unsigned NOT NULL,
   `term_entity_type` varbinary(32) NOT NULL,
   `term_language` varbinary(32) NOT NULL,
@@ -1642,4 +1642,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-02-19 14:42:11
+-- Dump completed on 2013-02-19 14:45:51
